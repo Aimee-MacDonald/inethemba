@@ -1,0 +1,50 @@
+$primary-colour: #8c731a
+
+body
+  margin: 0
+  background-color: #e6ff8c
+
+h1
+  margin: 0
+  text-align: center
+
+h2
+  margin: 0
+  text-align: center
+
+.hbar
+  width: 100%
+  height: 3px
+  background-color: $primary-colour
+
+header
+  background-color: black
+  color: $primary-colour
+  h1
+    padding: 1rem 0
+  h2
+    padding-bottom: 1rem
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+    display: flex
+    justify-content: space-around
+
+@media screen and (orientation: landscape) and (min-width: 800px)
+  header
+    height: 5rem
+    padding: 0 2rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    h1
+      padding: 0
+      cursor: pointer
+    h2
+      margin: 0 1rem
+      padding: 1.7rem
+      cursor: pointer
+      &:hover
+        background-color: $primary-colour
+        color: black
