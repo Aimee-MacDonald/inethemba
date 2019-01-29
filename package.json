@@ -1,0 +1,32 @@
+{
+  "name": "inethemba",
+  "version": "1.0.0",
+  "description": "A Bulawayo Based arts Management and Consulting Company",
+  "main": "app.js",
+  "dependencies": {
+    "express": "4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aimee-MacDonald/inethemba.git"
+  },
+  "keywords": [
+    "Africa",
+    "Bulawayo",
+    "Arts",
+    "Music",
+    "Theatre",
+    "Management",
+    "Consulting"
+  ],
+  "author": "Aimee MacDonald",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aimee-MacDonald/inethemba/issues"
+  },
+  "homepage": "https://github.com/Aimee-MacDonald/inethemba#readme"
+}
