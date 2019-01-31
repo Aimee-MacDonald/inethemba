@@ -20,11 +20,13 @@ h2
 
 header
   background-color: black
-  color: $primary-colour
   h1
     padding: 1rem 0
+  h2
+    padding-bottom: 1rem
   a
     text-decoration: none
+    color: $primary-colour
   ul
     margin: 0
     padding: 0
@@ -69,9 +71,10 @@ header
       padding: 0
       cursor: pointer
     h2
-      margin: 0 1rem
+      margin: 0
       padding: 1.7rem
       cursor: pointer
       &:hover
         background-color: $primary-colour
-        color: black
+        a
+          color: black
