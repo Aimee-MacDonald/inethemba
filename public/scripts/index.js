@@ -1,5 +1,5 @@
 window.addEventListener("hashchange", e => {
-  switch(e.newURL.substring(23)){
+  switch(e.newURL.substring(e.newURL.indexOf("#") + 1)){
     case 'home':
       document.getElementById("home-container").style.width = "100%";
       document.getElementById("artists-container").style.width = "0%";
