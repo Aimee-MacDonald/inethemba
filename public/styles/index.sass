@@ -20,10 +20,24 @@ h2
 
 header
   background-color: black
-  h1
-    padding: 1rem 0
+  .title-section
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0rem 1rem
+    h1
+      padding: 1rem 0
+    .menu-closed
+      background-color: $primary-colour
+      width: 2rem
+      height: 2rem
+    .menu-open
+      background-color: $primary-colour
+      width: 2rem
+      height: 2rem
+      border-radius: 50%
   h2
-    padding-bottom: 1rem
+    padding-bottom: 0.5rem
   a
     text-decoration: none
     color: $primary-colour
@@ -32,7 +46,11 @@ header
     padding: 0
     list-style-type: none
     display: flex
+    flex-flow: nowrap column
     justify-content: space-around
+    height: 0
+    overflow: hidden
+    transition: 1s
 
 #content-area
   width: 100%
@@ -49,7 +67,7 @@ header
     transition: 0.5s
     p
       max-width: 800px
-      padding: 1rem
+      margin: 1rem 1.5rem 0rem 1.5rem
   #home-container
     width: 100%
   #artists-container
@@ -71,6 +89,10 @@ header
     h1
       padding: 0
       cursor: pointer
+    .menu-closed
+      display: none
+    .menu-open
+      display: none
     h2
       margin: 0
       padding: 1.7rem
@@ -78,3 +100,6 @@ header
       &:hover
         background-color: $primary-colour
         color: black
+    ul
+      flex-flow: nowrap row
+      height: auto !important

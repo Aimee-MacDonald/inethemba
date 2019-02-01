@@ -1,4 +1,21 @@
+var menuOpen = false;
+function toggleMenu(){
+  menuOpen = !menuOpen;
+
+  var el_menu = document.getElementById("menu");
+  var el_menuToggle = document.getElementById("menutoggle");
+
+  if(menuOpen){
+    el_menu.style.height = "auto";
+    el_menuToggle.classList = "menu-open";
+  } else {
+    el_menu.style.height = "0";
+    el_menuToggle.classList = "menu-closed";
+  }
+}
+
 window.addEventListener("hashchange", e => {
+  toggleMenu();
   switch(e.newURL.substring(e.newURL.indexOf("#") + 1)){
     case 'home':
       document.getElementById("home-container").style.width = "100%";
